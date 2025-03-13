@@ -1,0 +1,152 @@
+/* Below code is used to style the NavBar Component */
+
+/* Below code is used to style the navbar Div */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 170px;
+
+}
+
+/* Below code is used to style the siteLogo */
+.siteLogo{
+    width: 100px;
+    height: 60px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+/* Below code is used to style the ul Element (navMenu) */
+.navMenu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+/* Below code is used to style the li Element called navList */
+.navList{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    text-decoration: none;
+    
+}
+
+/* Below code is used to style the anchorLink Element called anchorLink */
+.anchorLink{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Below code is used to style the p element called navLink */
+.navLink{
+    color: #577BC1;
+    text-decoration: none;
+    cursor: pointer;
+    
+    img{
+        display: flex;
+        margin: auto;
+    }
+}
+
+/* Below code is used to style the div Element called requestQuotes */
+.requestQuotes{
+    padding: 20px 35px;
+    border-radius: 50px;
+    background: linear-gradient(256deg, #da7c25 36%, #b923e1 100%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: .5s;
+
+    /* Below code is used to style connectMe hover  */
+
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 2px;
+        transition: .6s;
+    }
+
+}
+
+.anchorLink{
+    color: #01062c;
+}
+
+/* Below code is used to style the Open and Close Nav SideBar */
+.navOpen, .navClose {
+    display: none;
+}
+
+/* ------------------------------- BELOW CODE IS THE MEDIA QUERY --------------------------------- */
+/* 1st Mobile Responsive Start Here */
+@media(max-width:768px){
+
+    /* Below code is used to style the navbar Div */
+    .navbar{
+        margin: 20px 50px;
+    }
+
+    /* Below code is used to style the ul Element (navMenu) For Mobile Responsiveness */
+    .navMenu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        width: 300px;
+        height: 100%;
+        background: #e6e208;
+        z-index: 2;
+        transition: right .9s;
+        right: -300px;
+        padding: 30px;
+        font-size: 30px;
+
+        /* Below code is used to style the li Element called navList for Mobile Responsiveness */
+        .navlist{
+            font-size: 30px;
+            padding-left: 100px;
+            flex-direction: row;
+            gap: 20px;
+
+
+            .navLink{
+                font-size: 40px;
+            }
+        }
+    }
+
+
+
+    /* Below code is used to style the div Element called requestQuotes */
+    .requestQuotes{
+        display: none;
+    }
+
+    /* Below code is used to style the Open Mobile Menu */
+    .navOpen{
+        display: block;
+        position: fixed;
+        right: 30px;
+        height: 40px;
+        color: #fff;
+        background:  #da7c25;
+        cursor: pointer;
+    }
+
+    /* Below code is used to style the Close Mobile Menu */
+    .navClose{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 200px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+/* 1st Mobile Responsive End Here */

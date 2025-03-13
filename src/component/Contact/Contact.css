@@ -1,0 +1,205 @@
+/* Below code is used to style the Contact Section */
+
+/* Below code is used to style the contact div */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+/* Below code is used to style the contactTitle div element */
+.contactTitle{
+    position: relative;
+
+    h1{
+        padding: 0px 30px;
+        font-size: 80px;
+        font-weight: 600;
+        color: #01062c;
+    }
+
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 50px;
+    }
+}
+
+/* Below code is used to style the contactSection div Element */
+.contactSection{
+    display: flex;
+    gap: 150px;
+}
+
+/* Below code is used to style the leftContactSection div Element */
+.leftContactSection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+        background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p{
+        max-width: 550px;
+        color: #01062c;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .contactDetails{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: #01062c;
+        font-size: 22px;
+
+        .contactDetail{
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            gap: 20px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+
+/* Below code is used to style the rightContactSection div Element */
+.rightContactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+    .contact-form{
+         display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+
+        label {
+            color: #01062c;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        input{
+            border: none;
+            width: 700px;
+            height: 78px;
+            font-size: 22px;
+            padding-left: 20px;
+            border-radius: 4px;
+            color: #01062c;
+            background: #32323c;
+        }
+
+        textarea{
+            width: 650px;
+            border: none;
+            padding: 25px;
+            border-radius: 4px;
+            color: #A0A0A0;
+            background: #32323c;
+            font-size: 22px;
+        }
+
+        button{
+            border: none;
+            color: #01062c;
+            border-radius: 50px;
+            background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+            padding: 20px 60px;
+            font-size: 22px;
+            margin-bottom: 50px;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover{
+                transform: scale(1.1);
+                transition: .6s;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+
+
+/* ------------------------------- BELOW CODE IS THE MEDIA QUERY --------------------------------- */
+/* 1st Mobile Responsive Start Here */
+@media(max-width:768px){
+    .contact{
+        gap: 70px;
+        margin: 50px 70px;
+        align-items: start;
+
+        .contactTitle{
+            h1{
+                font-size: 50px;
+                padding: 0;
+                font-weight: 600;
+            }
+
+            img{
+                width: 130px;
+                margin-right: -20px;
+            }
+        }
+
+        .contactSection{
+            flex-direction: column;
+
+            .leftContactSection{
+                h1{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 20px;
+                    text-indent: 20px;
+                }
+
+                .contactDetail{
+                    gap: 20px;
+                }
+            }
+
+            .rightContactSection{
+
+                .contact-form{
+                    label{
+                        font-size: 20px;
+                    }
+
+                    input{
+                        width: 100%;
+                        font-size: 24px;
+                    }
+
+                    textarea{
+                        width: 95%;
+                        font-size: 20px;
+                    }
+
+                    .contact-submit{
+                        font-size: 20px;
+                        padding: 15px 40px;
+                    }
+                }
+            }
+        }
+    }
+}

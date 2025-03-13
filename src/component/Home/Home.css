@@ -1,0 +1,73 @@
+/* Below code is used to style the Home Component */
+
+/* Below code is used to style the home Div Element */
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+
+    img{
+        height: 500px;
+        width: 500px;
+    }
+}
+
+/* Below code is used to style the heroPage div Element */
+.heroPage{
+    padding: 5px;
+
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: justify;
+        text-indent: 50px;
+
+        span{
+            background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+    }
+
+    p {
+        text-align: justify;
+        font-size: 24px;
+        line-height: 40px;
+        text-indent: 50px;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* ------------------------------- BELOW CODE IS THE MEDIA QUERY --------------------------------- */
+/* 1st Mobile Responsive Start Here */
+@media(max-width:768px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 70px;
+    }
+
+    .heroPage{
+
+
+        h1{
+            margin-top: 50px;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 32px;
+            text-indent: 20px;
+            text-align: justify;
+        }
+    }
+}
+/* 1st Mobile Responsive End Here */

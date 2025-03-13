@@ -1,0 +1,13 @@
+/* Below code is used to reset the css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Below code is used to style the body of the page */
+body{
+  height: 100vh;
+  background: #000957;
+  color: #344CB7;
+}
