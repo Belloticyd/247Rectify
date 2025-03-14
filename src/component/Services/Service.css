@@ -1,0 +1,151 @@
+
+/* Below code is used to style the services div element */
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 170px;
+}
+
+/* Below code is used to style the service-title div element inside the services div element */
+.service-title{
+    position: relative;
+}
+
+/* Below code is used to style  h1 element inside the service-titlediv element */
+.service-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* Below code is used to style  img element inside the service-title div element  */
+
+.service-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Below code is used to style  service-containe element div inside the services div element  */
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+
+    /* Below code is used to style  service-format element div inside the service-container div element  */
+    .service-format{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transition: .4s;
+
+        h3{
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        h1{
+            font-size: 38px;
+            font-weight: 800;
+            background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p{
+            color:  #000957;
+            font-size: 24px;
+            line-height: 40px;
+            max-width: 300px
+        }
+
+        .service-readMore{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        &:hover{
+            border: 2px solid #ff00ff;
+            color:  #d4d4d4;
+            transform: scale(1.05);
+            background-image: linear-gradient(45deg, #3f0028, #582300);
+            transition: .9s;
+
+            p{
+                color: #d4d4d4;
+            }
+        }
+    }
+}
+
+/* Below code is the media query */
+/* 1St Mobile responsive Start Here */
+@media(max-width:768px) {
+    .services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+
+        .service-title{
+            h1{
+                font-size: 50px;
+                padding: 0;
+            }
+
+            img{
+                width: 130px;
+                margin-right: -20px;
+            }
+        }
+    }
+
+    .service-container{
+        grid-template-columns: 1fr;
+        /* gap: 30px; */
+
+        .service-title{
+
+
+            h1{
+                font-size: 50px;
+                padding: 0;
+                text-align: center;
+            }
+    
+            img{
+                width: 130px;
+                right: -20px;
+            }
+        }
+
+        .service-format{
+            gap: 20px;
+            padding: 32px;
+
+            h3{
+                font-size: 28px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 32px;
+                max-width: 300px;
+            }
+        }
+    }
+}
+/* 1St Mobile responsive End Here */

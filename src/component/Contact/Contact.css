@@ -72,6 +72,17 @@
             gap: 20px;
             cursor: pointer;
 
+            a{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                text-decoration: none;
+            }
+
+            img{
+                background: #01062c;
+            }
+
         }
     }
 }
@@ -119,9 +130,9 @@
 
         button{
             border: none;
-            color: #01062c;
+            color: #fff;
             border-radius: 50px;
-            background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+            background: linear-gradient(264deg, #03045e -5.09%, #caf0f8  106.28%);
             padding: 20px 60px;
             font-size: 22px;
             margin-bottom: 50px;
@@ -130,8 +141,9 @@
 
             &:hover{
                 transform: scale(1.1);
-                transition: .6s;
+                transition: .9s;
                 border-radius: 2px;
+                font-size: 30px;
             }
         }
     }

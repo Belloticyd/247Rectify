@@ -90,7 +90,7 @@ const Navbar = () => {
 
       {/* Below code is the request a quote div element */}
       <div className="requestQuotes">
-        <AnchorLink className="anchorLink" offset={50} href="#contact">Request a Quotes</AnchorLink>
+        <AnchorLink className="anchorLink quotes" offset={50} href="#contact">Request a Quotes</AnchorLink>
       </div>
     </div>
   )

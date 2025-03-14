@@ -8,6 +8,16 @@
 /* Below code is used to style the body of the page */
 body{
   height: 100vh;
-  background: #000957;
-  color: #344CB7;
+  background: #caf0f8 ;
+  color:  #000957;
 }
+
+/* 
+First Color: #03045e-
+2nd Color: #0077b6-
+3rd Color: #00b4d8-
+4th Color: #90e0ef-
+5th Color: #caf0f8-
+6th Color: #cff1f9
+Original Background Color: #000957
+original text Color: #344CB7 */

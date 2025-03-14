@@ -44,7 +44,7 @@
 
 /* Below code is used to style the p element called navLink */
 .navLink{
-    color: #577BC1;
+    color: #000957;
     text-decoration: none;
     cursor: pointer;
     
@@ -58,7 +58,7 @@
 .requestQuotes{
     padding: 20px 35px;
     border-radius: 50px;
-    background: linear-gradient(256deg, #da7c25 36%, #b923e1 100%);
+    background: linear-gradient(256deg, #03045e 36%, #caf0f8 100%);
     font-size: 22px;
     cursor: pointer;
     transition: .5s;
@@ -74,7 +74,15 @@
 }
 
 .anchorLink{
-    color: #01062c;
+    color: #90e0ef;
+}
+
+.quotes{
+    background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 
 /* Below code is used to style the Open and Close Nav SideBar */

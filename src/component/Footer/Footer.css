@@ -67,7 +67,7 @@
         }
 
         .subsrcibe{
-            background: linear-gradient(264deg, #df8908 -5.09%, #b415b4 106.28%);
+            background: linear-gradient(264deg, #03045e -5.09%, #caf0f8  106.28%);
             font-size: 18px;
             padding: 5px 10px;
             border-radius: 50px;
@@ -80,7 +80,7 @@
             &:hover{
                 transform: scale(1.1);
                 border-radius: 2px;
-                transition: .6s;
+                transition: .8s;
             }
         }
     }
